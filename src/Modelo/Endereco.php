@@ -4,7 +4,7 @@ namespace Alura\Banco\Modelo;
 
 /**
  * Class Endereco
- * @package Alura\Banco\Modelo
+ * @package 2\Banco\Modelo
  * @property-read string $cidade
  * @property-read string $bairro
  * @property-read string $logradouro

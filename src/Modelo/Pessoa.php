@@ -24,11 +24,10 @@ abstract class Pessoa
         return $this->cpf->recuperaNumero();
     }
 
-    final protected function validaNome(string $nomeTitular)
+    final protected function validaNome(string $nome)
     {
-        if (strlen($nomeTitular) < 5) {
-            echo "Nome precisa ter pelo menos 5 caracteres";
-            exit();
+        if (strlen($nome) < 5) {
+            throw new \ArgumentCountError();
         }
     }
 }
